@@ -7,3 +7,8 @@ cellular coordinates in the 'Fkoordinate.txt' file.
 
 Fbinsig.txt --> array like structure with shape (number of recorded frames, number of cells)
 Fkoordinate.txt --> array like structure with shape (number of cells, 2): x, y coordinates 
+
+Result is of the same shape as the binarized activity array with values corresponding to the
+waves each cell belongs to. Example: all cells with value 52 in the resulting array belong to
+the same event with number 52. Each wave can therefore be reconstructed by extracting cells 
+that belong to the same event at a given time.
