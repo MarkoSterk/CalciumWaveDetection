@@ -8,6 +8,9 @@ cellular coordinates in the 'Fkoordinate.txt' file.
 Fbinsig.txt --> array like structure with shape (number of recorded frames, number of cells)
 Fkoordinate.txt --> array like structure with shape (number of cells, 2): x, y coordinates 
 
+algorithm is in the file 'wave_detection.py' and takes the beforementioned .txt files
++ a few parameters which are set in the file (explanations are in the file).
+
 Result is of the same shape as the binarized activity array with values corresponding to the
 waves each cell belongs to. Example: all cells with value 52 in the resulting array belong to
 the same event with number 52. Each wave can therefore be reconstructed by extracting cells 
