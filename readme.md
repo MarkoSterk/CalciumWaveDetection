@@ -8,7 +8,7 @@ cellular coordinates in the 'Fkoordinate.txt' file.
 Fbinsig.txt --> array like structure with shape (number of recorded frames, number of cells)
 Fkoordinate.txt --> array like structure with shape (number of cells, 2): x, y coordinates 
 
-algorithm is in the file 'wave_detection.py' and takes the beforementioned .txt files
+Algorithm is in the file 'wave_detection.py' and takes the beforementioned .txt files
 + a few parameters which are set in the file (explanations are in the file).
 
 Result is of the same shape as the binarized activity array with values corresponding to the
