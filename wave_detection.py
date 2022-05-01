@@ -1,6 +1,13 @@
 ﻿import numpy as np
 from scipy.spatial import distance
 
+'''
+Requires the binarized signal as an array of shape (number of frames, number of cells)
+and cellular positions (x,y) as an array of shape (number of cells, 2)
+
+A folder with the name 'waves' must be present in the folder where this script is located.
+'''
+
 #Loads required data
 binsig=np.loadtxt("Fbinsig.txt") #binarized cell signals. 1: during Ca2+ oscillations, otherwise 0
                                 #signal is of shape: (frame index, cell index)
